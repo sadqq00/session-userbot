@@ -1,0 +1,27 @@
+{
+  "name": "SessionUserbot",
+  "description": "سورس يعمل بجلسة Pyrogram فقط (بدون Bot Token)",
+  "repository": "https://github.com/YOURUSERNAME/session-userbot",
+  "keywords": ["telegram","userbot","pyrogram","session"],
+  "env": {
+    "API_ID": {
+      "description": "API ID من my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "API HASH من my.telegram.org",
+      "required": true
+    },
+    "SESSION": {
+      "description": "جلسة Pyrogram المستخرجة",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "container"
+}
